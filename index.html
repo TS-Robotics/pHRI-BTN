@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ROASGPTVI: robotic assembly task assisted by GPT-4 vision">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towards intuitive and safe physical human-robot collaboration: an uninstrumented touchpad interface powered by intrinsic robot tactile sensing</title>
+  <style>
+    .spaced-image-left {
+        padding-left: 10px; /* Adjust the value as needed */
+    }
+    .spaced-image-right {
+        padding-right: 10px; /* Adjust the value as needed */
+    }
+    .image-width {
+      width: 1500px; /* Adjust the value as needed */
+    }
+    .carousel-item {
+      text-align: center;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: black;
+    }
+    .author-block {
+            color: black;
+      }
+      .author-block a {
+          color: red; /* or whatever color you want for the link */
+      }
+
+      
+    
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icona_univpm.png">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<!-- POR FAZER-->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Towards intuitive and safe physical human-robot collaboration: an uninstrumented touchpad interface powered by intrinsic robot tactile sensing</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=mJs3hqcAAAAJ&hl=en">Teresa Sinico</a>,</span>
+                    <a href="https://scholar.google.com/citations?user=nWwhqOMAAAAJ&hl=en">Giovanni Boschetti</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=UnkrpWIAAAAJ&hl=en">Pedro Neto</a>        
+          </div>
+          <br>
+          <!-- <hr style="height:0px; visibility:hidden;" /> -->
+          <a href="https://www.unipd.it/en/" target="_blank">
+            <img src="./static/images/unipd_logo.png" width="20%" class="center-image" alt="UC Logo">
+        </a>
+          <a href="http://www.uc.pt" target="_blank">
+        <img src="./static/images/uc_logo.png" width="50%" class="center-image" alt="UC Logo">
+      </a>
+      <a href="http://www.uc.pt" target="_blank">
+    <img src="./static/images/lab_logo_color.jpeg" width="20%" class="center-image" alt="UC Logo">
+    </a>
+
+          <!-- <div class="is-size-3 publication-authors">
+            <span class="author-block">Cornell University</span>
+          </div> -->
+
+          <div class="column has-text-centered">
+            
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="http://arxiv.org"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/embed/o04cAIyeFbo?si=WaYuKD7_e4hl6P_I"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://zenodo.org/records/15213122"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Video S2 -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="publication-video">
+              <!-- add a link to youtube video using iframe -->
+              <!-- <video poster="" id="shiba" controls playsinline> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o04cAIyeFbo?si=WaYuKD7_e4hl6P_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <!-- </video>  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video S2 -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="publication-video">
+              <!-- add a link to youtube video using iframe -->
+              <!-- <video poster="" id="shiba" controls playsinline> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W5iu3kClO4w?si=KKsoa13HRW9Y_o4K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <!-- </video>  -->
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <div class="publication-video">
+              <!-- add a link to youtube video using iframe -->
+              <!-- <video poster="" id="shiba" controls playsinline> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iHPg0xFCb04?si=2iRSGJxnUWlsrVO3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <!-- </video>  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Dataset -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-8">System Overview</h2>
+        <!-- <div class="publication-video"> -->
+          <p style="text-align: left;"> Physical Human-Robot Interaction (pHRI) increasingly demands intuitive and safe interfaces. While current research often employs external tactile sensors to enhance interaction capabilities, these solutions can increase system complexity and cost. We present a novel framework that leverages the <b>intrinsic tactile sensing capabilities</b> derived from <b>standard joint torque sensors</b> in modern collaborative robots, eliminating the need for dedicated external hardware. </li>
+          </p>
+            <br>
+          <img src="./static/images/fig1.jpg" class="image-width">
+          <br>
+          <br>
+
+          <p style="text-align: left;"> This framework empowers an uninstrumented, 3D-printed touchpad mounted on the robot's flange. Touches on nine distinct regions are interpreted as <b>virtual button commands</b> based on the resulting joint torque signals. This approach offers a cost-effective and robust solution for enhancing pHRI, enabling robots and human to work together. </li>
+          
+          
+
+          
+            
+        <!-- </div> -->
+      </div>
+    </div>
+
+  
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Classifying Touch Patterns with a Bidirectional LSTM Network</h2>
+        <p style="text-align: left;"> A key element of our framework is the accurate classification of touch gestures from joint torque data. To this end, we employ a Bidirectional Long Short-Term Memory (Bi-LSTM) network. To understand this classification, we must consider the input signals - both <b>joint torques</b> and resulting <b>end-effector forces and moments</b> - that allow us to distinguish touches: </li>
+        </p>
+          <br>
+          <div class="columns is-centered">
+            <div class="column">
+                <figure>
+                    <img src="./static/images/fig_torques.jpg" alt="Figure 1 Description">
+                    <figcaption style="text-align: left; font-size: 0.8em;"><b>Figure 1:</b> Mean joint torques and standard deviations for button B2 presses across six participants. Data represents the average touch profile for 50 trials per participant.</figcaption>
+                </figure>
+            </div>
+
+            <div class="column">
+                <figure>
+                    <img src="./static/images/fig_eef.jpg" alt="Figure 2 Description">  <!-- Replace with the actual path to your second image -->
+                    <figcaption style="text-align: left; font-size: 0.8em;"><b>Figure 2:</b> Mean end-effector forces and moments and standard deviations for button B2 presses across six participants. Data represents the average touch profile for 50 trials per participant.</figcaption>
+                </figure>
+            </div>
+        </div>
+          <p style="text-align: left;">
+            <p style="text-align: left;"> Despite clear average patterns, there is also considerable variation across participants, meaning each user interacts with the touchpad in a slightly different way. It highlights that our Bi-LSTM must be able to account for both the general signal characteristics and the user-specific variations. </li>
+            </p>
+            <br>
+            <figure style="text-align: center; width: 50%; margin: 0 auto;">
+              <img src="./static/images/confusion_matrix.jpg" alt="Confusion Matrix" style="max-width: 100%; display: block;">
+              <figcaption style="font-size: 0.8em;"><b>Figure 3:</b> Multi-user confusion matrix highlights generalization across subjects.</figcaption>
+          </figure>
+          <br>
+            <p style="text-align: left;" > Figure 3 shows the generalization to multiple participants. While there can be misclassification across different buttons, our Bi-LSTM approach is accurate, achieving an average <b>online accuracy exceeding 93%</b> even for users who did not contribute data to the training set and in different robot configurations than the one in which the dataset was recorded.   </li>
+          <!-- </div> -->
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-8">Hierarchical Control and Safety Layer</h2>
+        <!-- <div class="publication-video"> -->
+          <p style="text-align: left;"> A robust safety layer is critical for deploying AI-based approaches in real-world scenarios. Even with high classification accuracy, potential misclassifications necessitate additional safeguards. Our system addresses this by incorporating a <b>Hierarchical Finite State Machine (HFSM)</b> to <b>guarantee safe and predictable operations</b>. Critically, even if a touch is initially misclassified, the system then displays the identified command and asks for confirmation &#x2013 which is achieved by a simple tap on the robot itself &#x2013 preventing unintended actions. </li>
+          </p>
+            <br>
+            <figure style="text-align: center; width: 65%; margin: 0 auto;">
+              <img src="./static/images/state_machine.jpg" alt="State Machine" style="max-width: 100%; display: block;">
+              <figcaption style="font-size: 0.8em;"><b>Figure 4:</b> Our Hierarchical Finite State Machine (HFSM) governs system operation and prioritizes safety through state transitions, including command confirmation and error handling.</figcaption>
+          </figure>
+          <br>
+
+          <p style="text-align: left;"> The HFSM defines the allowable states and transitions of the robot, ensuring that user commands are executed safely and without compromising the integrity of the robot's operation. The HFSM is responsible for managing system initialization, touch event detection, robot motion, emergency stops, and prompting for confirmation. This confirmation step is key to the overall reliability and safety of our proposed method. </li>
+          
+            
+        <!-- </div> -->
+      </div>
+    </div>
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-8">Validation through Real-World Use Cases</h2>
+        <!-- <div class="publication-video"> -->
+          <p style="text-align: left;"> The practical utility of our framework was validated through the implementation of three realistic use cases: </li>
+            </p>
+          <br>
+            <li style="text-align: left;"> <b>User-guided collaborative assembly:</b> the user defines the assembly sequence by selecting tasks via the touchpad. The user can also increase or decrease the robot's speed using dedicated touchpad buttons.</li>
+            <li style="text-align: left;"> <b>Robot third-hand assistance:</b> while the assembly sequence is fixed, the touchpad provides control over the robot's actions. The user can open/close the gripper, engage hand-guiding mode, adjust speed, and trigger the next task in the sequence, all through the touchpad. </li>
+            <li style="text-align: left;"> <b>Manual teaching for robot programming </b> the touchpad enables intuitive robot programming. The user can use the touchpad to engage hand-guiding mode, record pick and place positions, control the gripper, and instruct the robot to execute the learned program. </li>
+          </p>
+            <br>
+            <figure style="text-align: center; width: 100%; margin: 0 auto;">
+              <img src="./static/images/fig10.jpg" alt="State Machine" style="max-width: 100%; display: block;">
+              <figcaption style="font-size: 0.8em;"><b>Figure 5:</b> Representative time-series recording illustrating key interaction events during the first use case. The top three panels display end-effector forces, end-effector moments, and joint torques, respectively. The timeline below shows key events on the top and actions performed during these events on the bottom.</figcaption>
+          </figure>
+          
+          
+            
+        <!-- </div> -->
+      </div>
+    </div>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column" id="Paper">
+        <h2 class="title is-3">Paper</h2>
+    <div class="paper-thumbnail">
+        <a href="https://arxiv.org">
+            <img class="layered-paper-big" width="100%" src="./static/images/paper_img.jpg" alt="Paper thumbnail"/>
+        </a>
+    </div>
+    <div class="paper-info">
+        <!-- <a href="https://openreview.net/forum?id=rxlokRzNWRq"><h3>ManiCast: Collaborative Manipulation with Cost-Aware Human Forecasting</h3></a>
+        <p>Kushal Kedia, Prithwish Dan, Atiksh Bhardwaj, Sanjiban Choudhury</p> -->
+        <h3 class="title is-4" style="text-align: center;">BibTex</h3>
+<pre style="overflow-x:hidden; text-wrap:wrap; white-space: pre-wrap;"><code>@misc{Sinico2025,
+  title={Towards intuitive and safe physical human-robot collaboration: an uninstrumented touchpad interface powered by intrinsic robot tactile sensing}, 
+  author={Teresa Sinico, Giovanni Boschetti and Pedro Neto},
+  year={2025},
+  eprint={xxxxxxxxx},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/xxxxxxxx}, 
+}
+  
+</code></pre> 
+    </div>
+    </div>
+  
+</div>
+</section>
+
+<br>
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
